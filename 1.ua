@@ -6,11 +6,11 @@ $ 2   5
 $ 1   3
 $ 3   9
 $ 3   3
-Test  ←
-Input ← AoCGet 2024 1
+Sample ←
+Input  ← AoCGet 2024 1
 
 Parse ← ⊜(⊜⋕⊸≠@ )⊸≠@\n
 Part₁ ← /+⌵/-≡⍆⍉ Parse
 Part₂ ← /+×⊃⊢(≡/+/⊞=)⍉ Parse
 
-⊟⊃Part₁Part₂ Test
+⊟⊃Part₁Part₂ Sample
