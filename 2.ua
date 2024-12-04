@@ -9,7 +9,7 @@ $ 1 3 6 7 9
 Sample ←
 Input  ← AoCGet 2024 2
 
-IsSafe ← ×⊃(/×/≠⊞<1_4⌵|=1⧻◴±)≡/-◫2
+IsSafe ← ×⊃(/×/≠⊞<1_4⌵|=1⧻◴±)⧈-
 
 Parse ← ⊜(□⊜⋕⊸≠@ )⊸≠@\n
 Part₁ ← /+≡◇IsSafe Parse
