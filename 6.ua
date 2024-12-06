@@ -16,24 +16,21 @@ Input  ← AoCGet 2024 6
 
 # Start Obstacles ? Input
 Parse ← ⊃(⊢⊚⌕@^|⊚⌕@#) ⊜∘⊸≠@\n
-
 # ? Dir Pos Obstacles
 Next ← ⟜+⨬∘(×1_¯1⇌)◡(∈:+)
-# Visited End ? Start Obstacles
-Go ← ⊓(◴|⊙◌⊟Next) ⍢(
-  ⊂⊙◡⊟                # Record point
-  ⊙⊙(↥0_0↧⊙⊸/↥) ⊙Next # Step and clamp
-| ◡(¬∈⊙⊟)             # Check visited
-) °△0_2_2 [¯1 0]
+# ? Start Obstacles
+Path ← ⊙◌ °□⊢astar(¤⊙◌⍜°⊟Next)1(/↥↥⊃(<0_0)≤⊣⊙/↥) ⊟[¯1 0]
+# ? Start Obstacles
+Cycles ← ⍣(0◌Path)1
 
-Part₁ ← ⧻◴⍜⍉⊣ ⊙◌ Go Parse
+Part₁ ← ⧻⊚ ≡/××⊓≥≤0,¤/↥ ⤙(◴⍜⍉⊣ Path) Parse
 
 # Doesn't work on real input 😔
 Part₂ ← (
   ◡(⍜°⊚¬⊂) Parse # Potential obstacle positions
   /+ wait≡pool(
     ⊃⋅∘(⊂⊙⋅∘) # Add obstacle
-    ∈ Go      # Check
+    Cycles
   ) ⊙∩¤
 )
 
