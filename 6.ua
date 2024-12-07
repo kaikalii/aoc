@@ -17,17 +17,24 @@ Input  ← AoCGet 2024 6
 # Start Obstacles ? Input
 Parse ← ⊃(⊢⊚⌕@^|⊚⌕@#) ⊜∘⊸≠@\n
 # ? Dir Pos Obstacles
-Next ← ⟜+⨬∘(×1_¯1⇌)◡(∈:+)
+Next ← ⟜+⍢(×1_¯1⇌|◡(∈:+))
 # ? Start Obstacles
-Path ← ⊙◌ °□⊢astar(¤⊙◌⍜°⊟Next)1(/↥↥⊃(<0_0)≤⊣⊙/↥) ⊟[¯1 0]
+Path ← (
+  ⤙(⊟[¯1 0]
+    ◴⍜⍉⊣ ⊙◌ °□⊢ astar(
+      ¤⊙◌⍜°⊟Next # Single neighbor
+    | 1
+    | /↥↥⊃(<0_0)≤⊣⊙/↥ # Out of bounds
+    ))
+  ▽⊸(≡/××⊓≥≤0,¤/↥) # Filter oob
+)
 # ? Start Obstacles
 Cycles ← ⍣(0◌Path)1
 
-Part₁ ← ⧻⊚ ≡/××⊓≥≤0,¤/↥ ⤙(◴⍜⍉⊣ Path) Parse
+Part₁ ← ⧻ Path Parse
 
-# Doesn't work on real input 😔
 Part₂ ← (
-  ◡(⍜°⊚¬⊂) Parse # Potential obstacle positions
+  ◡Path Parse
   /+ wait≡pool(
     ⊃⋅∘(⊂⊙⋅∘) # Add obstacle
     Cycles
