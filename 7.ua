@@ -1,4 +1,3 @@
-# Experimental!
 ~ "git: github.com/amatgil/steal-gift" ~ AoCGet
 
 $ 190: 10 19
