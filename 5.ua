@@ -36,13 +36,13 @@ Input  ← AoCGet 2024 5
 Parse ← (
   :°□₂⊜(□⊜□⊸≠@\n)¬⊸⦷"\n\n"
   ⊓⍚(⊜⋕⊸≠@,)(⍉≡◇(⊜⋕⊸≠@|)))
-IsCorrect    ← /×/≥≡⬚W⊗:¤
+IsCorrect ← /×/≥≡⬚W⊗:¤
 Dependencies ← ⧻⋅⊙◌⍥(
-  ⊃(⊏⊚∈⊙⋅°⊟)⋅⊙∘ # Select dependents
+  ⊃(⊏⊚∊⊙⋅°⊟)⋅⊙∘ # Select dependents
   ⟜(◴⊂)         # Aggregate
 )∞ ⊙[]
 TopoSort ← (
-  ⟜(≡▽¤ ⊸(∈⊙⊢))    # Remove unused rules (important!)
+  ⟜(≡▽¤ ⊸(∊⊙⊢))    # Remove unused rules (important!)
   ⟜≡Dependencies⊙¤ # Count dependencies
   ⊏⍖:              # Sort
 )

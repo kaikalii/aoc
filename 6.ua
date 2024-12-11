@@ -17,7 +17,7 @@ Input  ← AoCGet 2024 6
 # Start Obstacles ? Input
 Parse ← ⊃(⊢⊚⌕@^|⊚⌕@#) ⊜∘⊸≠@\n
 # ? Dir Pos Obstacles
-Next ← ⟜+⍢(×1_¯1⇌|◡(∈:+))
+Next ← ⟜+⍢(×1_¯1⇌|◡(∊:+))
 # ? Start Obstacles
 Path ← (
   ⤙(⊟[¯1 0]
