@@ -30,4 +30,4 @@ Path ← (
 Part₁ ← ◌Path
 Part₂ ← ⧻◴≡⊣/◇⊂ ⊙◌Path
 
-Part₂ &fras "2024-16.txt"
+⊟⊃Part₁Part₂ Sample
