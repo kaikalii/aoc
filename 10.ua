@@ -15,7 +15,7 @@ Input  ← Day 10
 Dirs  ← ⍉⊟°ℂ⁅ⁿ:i⇡4
 Parse ← -@0⊜∘⊸≠@\n
 # ? Start Map
-Paths  ← ⊙◌path(▽=⊃(+1⊡|⤚⬚∞⊡ +Dirs¤)|=9⊡)
+Paths  ← path(▽=⊃(+1⊡|⤚⬚∞⊡ +Dirs¤)|=9⊡)
 Solve! ← /+≡(^0Paths)⊙¤ ⊚⊸=0 Parse
 
 Part₁ ← Solve!(⧻◴≡◇⊣)

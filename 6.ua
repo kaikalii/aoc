@@ -21,8 +21,8 @@ Next ← ⟜+⍢(×1_¯1⇌|◡(∊:+))
 # ? Start Obstacles
 Path ← (
   ⤙(⊟[¯1 0]
-    ◴⍜⍉⊣ ⊙◌ °□⊢ path(
-      ¤⊙◌⍜°⊟Next      # Single neighbor
+    ◴⍜⍉⊣ ⊢ path(
+      (¤⊙◌⍜°⊟Next)    # Single neighbor
     | /↥↥⊃(<0_0)≤⊣⊙/↥ # Out of bounds
     ))
   ▽⊸(≡/××⊓≥≤0,¤/↥) # Filter oob
