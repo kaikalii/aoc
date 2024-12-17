@@ -21,13 +21,12 @@ A     ← ⊡0
 B     ← ⊡1
 C     ← ⊡2
 Combo ← ⨬(⊡-4)∘⊸<4
-Xor   ← ⍜∩⋯(≠∩(⬚0↙32))
 Dv    ← ⌊÷⊃(ⁿ:2Combo)⋅A
 Adv   ← ⍜A◌⤙Dv
-Bxl   ← ⍜B◌⤙(Xor⊙B)
+Bxl   ← ⍜B◌⤙(⍜∩⋯⬚0≠⊙B)
 Bst   ← ⍜B◌⤙(◿8Combo)
 Jnz   ← ⨬⋅⊙⊙∘⊃⋅⊙∘-₂ ≠0◡⋅A
-Bxc   ← ⍜B◌⤙(Xor⊃B C ◌)
+Bxc   ← ⍜B◌⤙(⍜∩⋯⬚0≠⊃B C ◌)
 Out   ← ⊃⋅∘(⊂:◿8Combo)
 Bdv   ← ⍜B◌⤙Dv
 Cdv   ← ⍜C◌⤙Dv
