@@ -1,5 +1,5 @@
 # Experimental!
-~ "git: github.com/amatgil/steal-gift" ~ AoCGet
+~ "aoc" ~ Day
 
 $ ....#.....
 $ .........#
@@ -12,7 +12,7 @@ $ ........#.
 $ #.........
 $ ......#...
 Sample ←
-Input  ← AoCGet 2024 6
+Input  ← Day 6
 
 # Start Obstacles ? Input
 Parse ← ⊃(⊢⊚⌕@^|⊚⌕@#) ⊜∘⊸≠@\n

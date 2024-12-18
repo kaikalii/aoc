@@ -1,4 +1,4 @@
-~ "git: github.com/amatgil/steal-gift" ~ AoCGet
+~ "aoc" ~ Day
 
 $ 7 6 4 2 1
 $ 1 2 7 8 9
@@ -7,7 +7,7 @@ $ 1 3 2 4 5
 $ 8 6 4 4 1
 $ 1 3 6 7 9
 Sample ←
-Input  ← AoCGet 2024 2
+Input  ← Day 2
 
 IsSafe ← ×⊃(/×/≠⊞<1_4⌵|=1⧻◴±)⧈-
 

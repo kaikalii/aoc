@@ -1,5 +1,5 @@
 # Experimental!
-~ "git: github.com/amatgil/steal-gift" ~ AoCGet
+~ "aoc" ~ Day
 
 $ 47|53
 $ 97|13
@@ -30,7 +30,7 @@ $ 75,97,47,61,53
 $ 61,13,29
 $ 97,13,75,29,47
 Sample ←
-Input  ← AoCGet 2024 5
+Input  ← Day 5
 
 # Updates Rules ? Input
 Parse ← (

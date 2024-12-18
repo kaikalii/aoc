@@ -1,4 +1,4 @@
-~ "git: github.com/amatgil/steal-gift" ~ AoCGet
+~ "aoc" ~ Day
 
 $ 190: 10 19
 $ 3267: 81 40 27
@@ -10,7 +10,7 @@ $ 192: 17 8 14
 $ 21037: 9 7 18 13
 $ 292: 11 6 16 20
 Sample ←
-Input  ← AoCGet 2024 7
+Input  ← Day 7
 
 Ops!  ← /+wait⊜pool(×⊸∊ /^0 ⊜⋕⊸≠@ :⋕ °$"_: _")⊸≠@\n
 Part₁ ← Ops!(⊂⊃+×)

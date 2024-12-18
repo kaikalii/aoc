@@ -1,4 +1,4 @@
-~ "git: github.com/amatgil/steal-gift" ~ AoCGet
+~ "aoc" ~ Day
 
 $ 3   4
 $ 4   3
@@ -7,7 +7,7 @@ $ 1   3
 $ 3   9
 $ 3   3
 Sample ←
-Input  ← AoCGet 2024 1
+Input  ← Day 1
 
 Parse ← ⊜(⊜⋕⊸≠@ )⊸≠@\n
 Part₁ ← /+⌵/-≡⍆⍉ Parse

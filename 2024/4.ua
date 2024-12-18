@@ -1,4 +1,4 @@
-~ "git: github.com/amatgil/steal-gift" ~ AoCGet
+~ "aoc" ~ Day
 
 $ MMMSXXMASM
 $ MSAMXMSMSA
@@ -11,7 +11,7 @@ $ SAXAMASAAA
 $ MAMMMXMMMM
 $ MXMXAXMASX
 Sample ←
-Input  ← AoCGet 2024 4
+Input  ← Day 4
 
 LinePat ← {
   ◡∩₄(⍉⇌)          # 4 others
