@@ -1,4 +1,3 @@
-# Experimental!
 ~ "aoc" ~ Day
 
 $ ###############
