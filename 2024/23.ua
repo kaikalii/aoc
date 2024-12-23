@@ -45,10 +45,12 @@ Kv! ← (
 # Get neighbors of a node. Only valid inside Kv!
 Neis ← °□get⊙°◌
 
-Part₁ ← Kv!(
-  ▽=@t⊸≡⊢                     # Get all that start with @t
-  ⍚(≡⊂¤⟜(▽⊸≡/(∊Neis)⧅₂<Neis)) # Neighbor pairs that are neighbors
-  ⧻◴≡⍆/◇⊂∘                    # Make trios and dedup
+Part₁ ← (
+  Kv!(
+    ▽=@t⊸≡⊢                     # Get all that start with @t
+    ⍚(≡⊂¤⟜(▽⊸≡/(∊Neis)⧅₂<Neis)) # Neighbor pairs that are neighbors
+  )
+  ⧻◴≡⍆/◇⊂ # Make trios and dedup
 )
 
 Part₂ ← (
