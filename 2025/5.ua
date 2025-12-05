@@ -2,13 +2,7 @@
 
 Parse ← ⊓⊜⋕⊜(⊟⊙+₁∩⋕°$"_-_") ∩⌞⊸≠@\n °˜$"_\n\n_"
 Part₁ ← /+ ≡/↥ ≡₁/< ⊞≤ Parse
-Part₂ ← (
-  ⊙¤°˜⊂ ⍆◌Parse        # Rest AccFirst ?
-  ∧(>◡⊓⊢(⊣⊣)           # Check for overlap
-    ˜⊂⍥(˜⊟↥⊃∩⊣⋅⊢⊙°˜⊂⌟) # Merge ranges and join
-  )
-  /+≡/- # Count
-)
+Part₂ ← /+ ≡/- \(↥⊣) ⍆◌Parse
 
 Day 5
 $ 3-5
